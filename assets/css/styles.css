@@ -45,6 +45,7 @@ h2 {
   font-size: 3.3rem;
   font-weight: 100;
   letter-spacing: 10px;
+  text-transform: uppercase;
 }
 
 p {
@@ -104,7 +105,7 @@ p {
 .sticky-position {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 99;
   padding-left: 2%;
 }
 
@@ -203,6 +204,59 @@ p {
 .img-item:hover .hover-container {
   bottom: 0;
   opacity: 1;
+}
+
+.partnership {
+  height: 100vh;
+}
+.partnership p {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.banner {
+  background-color: transparent;
+  max-width: 1440px;
+  position: relative;
+  overflow: hidden;
+}
+.banner:nth-of-type(2) h3 {
+  opacity: 0.8;
+}
+.banner:nth-of-type(3) h3 {
+  animation: moveback 5s infinite linear;
+  opacity: 0.6;
+}
+.banner:nth-of-type(4) h3 {
+  opacity: 0.4;
+}
+.banner h3 {
+  text-align: right;
+  padding: 2rem 0;
+  width: fit-content;
+  font-family: Inter;
+  font-size: 3.9rem;
+  font-weight: 100;
+  letter-spacing: 25px;
+  white-space: nowrap;
+  animation: move 5s infinite linear;
+}
+
+@keyframes move {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+@keyframes moveback {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

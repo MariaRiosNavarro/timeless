@@ -51,6 +51,7 @@ h2 {
   font-family: $i;
   @include text(3.3rem, 100);
   letter-spacing: 10px;
+  text-transform: uppercase;
 }
 
 p {
@@ -107,7 +108,7 @@ p {
 .sticky-position {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 99;
   padding-left: 2%;
 }
 
@@ -212,11 +213,74 @@ p {
 }
 
 // ---------------------#partnership
+
+.partnership {
+  height: 100vh;
+
+  p {
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+}
+
+.banner {
+  background-color: transparent;
+  max-width: 1440px;
+  position: relative;
+  overflow: hidden;
+  &:nth-of-type(2) {
+    h3 {
+      opacity: 0.8;
+    }
+  }
+
+  &:nth-of-type(3) {
+    h3 {
+      animation: moveback 5s infinite linear;
+      opacity: 0.6;
+    }
+  }
+  &:nth-of-type(4) {
+    h3 {
+      opacity: 0.4;
+    }
+  }
+
+  h3 {
+    text-align: right;
+    padding: 2rem 0;
+    width: fit-content;
+    font-family: Inter;
+    @include text(3.9rem, 100);
+    letter-spacing: 25px;
+    white-space: nowrap;
+    animation: move 5s infinite linear;
+  }
+}
+
 // ---------------------#showroom
 // ---------------------#news
 // ---------------------!footer
 
 // ?animations
+
+@keyframes move {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes moveback {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -100%;
+  }
+}
 
 // ?last
 @import "./media.scss";
