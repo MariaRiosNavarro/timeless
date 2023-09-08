@@ -1,9 +1,28 @@
+@font-face {
+  font-family: OS;
+  src: url("../fonts/OstrichSans-Light.otf");
+}
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  background-color: rgb(29, 27, 27);
+  color: #efeaea;
+  width: 100%;
+  max-width: 1440px;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 /*# sourceMappingURL=styles.css.map */

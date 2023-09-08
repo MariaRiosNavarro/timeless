@@ -1,12 +1,32 @@
 @import "./variables.scss";
 @import "./mixin.scss";
 
+@font-face {
+  font-family: OS;
+  src: url("../fonts/OstrichSans-Light.otf");
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  background-color: $b;
+  color: $w;
+  width: 100%;
+  max-width: 1440px;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 // ---------------------!General

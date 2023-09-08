@@ -8,17 +8,17 @@
 //     color: rgb(29, 27, 27);
 //   }
 
-//   @mixin f-column {
-//     display: flex;
-//     flex-direction: column;
-//   }
+@mixin f-column {
+  display: flex;
+  flex-direction: column;
+}
 
-//   @mixin f-row {
-//     display: flex;
-//     align-items: center;
-//   }
+@mixin f-row {
+  display: flex;
+  align-items: center;
+}
 
-//   @mixin text($fz, $fw) {
-//     font-size: $fz;
-//     font-weight: $fw;
-//   }
+@mixin text($fz, $fw) {
+  font-size: $fz;
+  font-weight: $fw;
+}
