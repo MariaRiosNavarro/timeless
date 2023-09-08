@@ -6,6 +6,13 @@
   src: url("../fonts/OstrichSans-Light.otf");
 }
 
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+// ---------------------!General
+
 *,
 *::before,
 *::after {
@@ -18,18 +25,51 @@ img {
   max-width: 100%;
 }
 
-.wrapper {
+.color-wrapper {
   background-color: $b;
   color: $w;
-  width: 100%;
+  width: 100vw;
+}
+
+.width-wrapper {
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 html {
   font-size: 62.5%;
+  font-family: $os;
 }
 
-// ---------------------!General
+// ---------------------!header
+
+.paralax {
+  position: relative;
+  background: url("../img/FJ_home_slider2.jpg") no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 4rem;
+  @include f-row;
+  gap: 2rem;
+  h1 {
+    text-align: center;
+    @include text(6rem, 100);
+    color: #fff;
+    font-family: $i;
+    letter-spacing: 108px;
+    margin-left: 2%;
+    width: 60vw;
+  }
+}
+
+.sticky-position {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
 // ---------------------!main
 // ---------------------#story
 // ---------------------#curated
