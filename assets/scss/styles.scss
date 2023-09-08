@@ -41,6 +41,40 @@ html {
   font-family: $os;
 }
 
+a {
+  text-decoration: none;
+  color: $w;
+}
+
+h2 {
+  text-align: center;
+  font-family: $i;
+  @include text(3.3rem, 100);
+  letter-spacing: 10px;
+}
+
+.line {
+  height: 1px;
+  background-color: $w;
+}
+
+.arrow-wrapper {
+  @include f-row;
+  transition: transform 0.3s ease;
+  p {
+    font-family: Helvetica, Arial, sans-serif;
+    @include text(1.3rem, 300);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  img {
+    padding-left: 1rem;
+  }
+  &:hover {
+    transform: scale(1.2, 1);
+  }
+}
+
 // ---------------------!header
 
 .paralax {
@@ -68,10 +102,45 @@ html {
   position: sticky;
   top: 0;
   z-index: 10;
+  padding-left: 2%;
 }
 
 // ---------------------!main
+
 // ---------------------#story
+
+.story {
+  @include f-column;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    font-family: $i;
+    @include text(1.3rem, 100);
+    letter-spacing: 5px;
+    padding-top: 5.2rem;
+    padding-bottom: 10rem;
+    z-index: 10;
+  }
+  h2 {
+    padding-bottom: 5.8rem;
+    z-index: 10;
+  }
+
+  .line {
+    width: 50%;
+    z-index: 10;
+  }
+  .story-img {
+    height: 40vh;
+    position: relative;
+    top: -12vh;
+  }
+  .arrow-wrapper {
+    position: relative;
+    top: -10vh;
+  }
+}
+
 // ---------------------#curated
 // ---------------------#partnership
 // ---------------------#showroom

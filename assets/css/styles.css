@@ -34,6 +34,43 @@ html {
   font-family: OS, Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #efeaea;
+}
+
+h2 {
+  text-align: center;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 3.3rem;
+  font-weight: 100;
+  letter-spacing: 10px;
+}
+
+.line {
+  height: 1px;
+  background-color: #efeaea;
+}
+
+.arrow-wrapper {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.arrow-wrapper p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.arrow-wrapper img {
+  padding-left: 1rem;
+}
+.arrow-wrapper:hover {
+  transform: scale(1.2, 1);
+}
+
 .paralax {
   position: relative;
   background: url("../img/FJ_home_slider2.jpg") no-repeat center;
@@ -61,6 +98,40 @@ html {
   position: sticky;
   top: 0;
   z-index: 10;
+  padding-left: 2%;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.story h3 {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 100;
+  letter-spacing: 5px;
+  padding-top: 5.2rem;
+  padding-bottom: 10rem;
+  z-index: 10;
+}
+.story h2 {
+  padding-bottom: 5.8rem;
+  z-index: 10;
+}
+.story .line {
+  width: 50%;
+  z-index: 10;
+}
+.story .story-img {
+  height: 40vh;
+  position: relative;
+  top: -12vh;
+}
+.story .arrow-wrapper {
+  position: relative;
+  top: -10vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
