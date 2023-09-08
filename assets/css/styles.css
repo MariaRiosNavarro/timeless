@@ -19,7 +19,7 @@ img {
 }
 
 .color-wrapper {
-  background-color: rgb(12, 12, 12);
+  background-color: #121212;
   color: #efeaea;
   width: 100vw;
 }
@@ -45,6 +45,13 @@ h2 {
   font-size: 3.3rem;
   font-weight: 100;
   letter-spacing: 10px;
+}
+
+p {
+  font-family: Helvetica;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 3px;
 }
 
 .line {
@@ -102,6 +109,7 @@ h2 {
 }
 
 .story {
+  background-color: #1a1a1a;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,6 +140,69 @@ h2 {
 .story .arrow-wrapper {
   position: relative;
   top: -10vh;
+}
+
+.curated {
+  padding-bottom: 23rem;
+  background-color: #121212;
+}
+.curated h2 {
+  padding-top: 6.7rem;
+  padding-bottom: 3.8rem;
+}
+.curated p {
+  text-align: center;
+}
+
+.gallery-hover {
+  padding-top: 7rem;
+  display: flex;
+  align-items: center;
+  gap: 8vh;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-hover .img-item {
+  width: 23%;
+  height: 100%;
+  text-align: center;
+}
+.gallery-hover .img-item h3 {
+  padding-top: 1rem;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.gallery-hover .img-item .line {
+  display: inline-block;
+  width: 70%;
+  margin: 2rem 0;
+  height: 1px;
+}
+.gallery-hover .img-item p {
+  padding-bottom: 3rem;
+}
+
+.img-item {
+  overflow: hidden;
+  position: relative;
+}
+.img-item .hover-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: -100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.6s ease-in-out;
+}
+.img-item:hover .hover-container {
+  bottom: 0;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */

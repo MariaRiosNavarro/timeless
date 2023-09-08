@@ -53,6 +53,12 @@ h2 {
   letter-spacing: 10px;
 }
 
+p {
+  font-family: Helvetica;
+  @include text(1.6rem, 300);
+  letter-spacing: 3px;
+}
+
 .line {
   height: 1px;
   background-color: $w;
@@ -110,6 +116,7 @@ h2 {
 // ---------------------#story
 
 .story {
+  background-color: $lb;
   @include f-column;
   align-items: center;
   justify-content: center;
@@ -142,6 +149,68 @@ h2 {
 }
 
 // ---------------------#curated
+
+.curated {
+  padding-bottom: 23rem;
+  background-color: $b;
+  h2 {
+    padding-top: 6.7rem;
+    padding-bottom: 3.8rem;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.gallery-hover {
+  padding-top: 7rem;
+  @include f-row;
+  gap: 8vh;
+  align-items: center;
+  justify-content: center;
+
+  .img-item {
+    width: 23%;
+    height: 100%;
+    text-align: center;
+    h3 {
+      padding-top: 1rem;
+      font-family: $i;
+      @include text(3rem, 400);
+    }
+    .line {
+      display: inline-block;
+      width: 70%;
+      margin: 2rem 0;
+      height: 1px;
+    }
+    p {
+      padding-bottom: 3rem;
+    }
+  }
+}
+
+.img-item {
+  overflow: hidden;
+  position: relative;
+  .hover-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    @include f-column;
+    justify-content: center;
+    align-items: center;
+    bottom: -100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.6s ease-in-out;
+  }
+  &:hover .hover-container {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
 // ---------------------#partnership
 // ---------------------#showroom
 // ---------------------#news
