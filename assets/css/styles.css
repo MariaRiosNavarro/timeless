@@ -116,15 +116,13 @@ main {
   position: relative;
   background-color: #1a1a1a;
 }
-main .fixed-position {
-  position: sticky;
+
+.fixed-position {
+  position: fixed;
   top: 1rem;
   left: 1rem;
   z-index: 50;
   padding-left: 2%;
-}
-main section {
-  height: 100vh;
 }
 
 .story {
@@ -335,6 +333,7 @@ main section {
   font-weight: 100;
   font-family: Inter, Arial, Helvetica, sans-serif;
   letter-spacing: 10px;
+  padding-bottom: 5rem;
 }
 .news .clock-gallery {
   display: flex;
@@ -344,9 +343,11 @@ main section {
 }
 .news .img-wrapper {
   overflow: hidden;
-  height: 100%;
+  object-fit: cover;
+  height: 200px;
 }
 .news .img-wrapper .clock {
+  height: 200px;
   width: 100%;
   object-fit: cover;
   overflow: hidden;
@@ -367,6 +368,9 @@ main section {
 }
 .news .img-wrapper {
   width: 30%;
+  object-fit: cover;
+  height: 200px;
+  overflow: hidden;
 }
 .news .news-text {
   text-align: center;
@@ -374,6 +378,7 @@ main section {
 .news .news-text h2 {
   position: relative;
   top: -8rem;
+  padding-bottom: 0rem;
 }
 .news .news-text .highlight {
   position: relative;

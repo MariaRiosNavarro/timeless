@@ -345,6 +345,7 @@ main {
     @include text(3.3rem, 100);
     font-family: $i;
     letter-spacing: 10px;
+    padding-bottom: 5rem;
   }
 
   .clock-gallery {
@@ -355,8 +356,10 @@ main {
 
   .img-wrapper {
     overflow: hidden;
-    height: 100%;
+    object-fit: cover;
+    height: 200px;
     .clock {
+      height: 200px;
       width: 100%;
       object-fit: cover;
       overflow: hidden;
@@ -380,7 +383,7 @@ main {
 
   .img-wrapper {
     width: 30%;
-    // aspect-ratio: 1;
+    object-fit: cover;
     height: 200px;
     overflow: hidden;
   }
@@ -390,6 +393,7 @@ main {
     h2 {
       position: relative;
       top: -8rem;
+      padding-bottom: 0rem;
     }
     .highlight {
       position: relative;
