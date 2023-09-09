@@ -292,6 +292,59 @@ p {
   padding-bottom: 0;
 }
 
+.news {
+  padding: 10rem;
+  background-color: #1a1a1a;
+}
+.news .clock-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.news .img-wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+.news .img-wrapper .clock {
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  flex-grow: 0;
+  transition: all 0.5s ease-in-out;
+}
+.news .img-wrapper:hover .clock {
+  transform: scale(1.5);
+  filter: brightness(1.4);
+}
+.news .news-text {
+  width: 30%;
+}
+.news .news-text .img-wrapper {
+  width: 100%;
+}
+.news .img-wrapper {
+  width: 30%;
+}
+.news .news-text {
+  text-align: center;
+}
+.news .news-text h2 {
+  position: relative;
+  top: -8rem;
+}
+.news .news-text .highlight {
+  position: relative;
+  top: -7rem;
+}
+.news .news-text a {
+  position: relative;
+  top: -5rem;
+}
+
 @keyframes move {
   from {
     margin-left: -100%;

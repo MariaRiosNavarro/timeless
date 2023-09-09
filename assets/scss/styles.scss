@@ -310,6 +310,64 @@ p {
 }
 
 // ---------------------#news
+
+.news {
+  padding: 10rem;
+  background-color: $lb;
+  .clock-gallery {
+    @include f-row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img-wrapper {
+    overflow: hidden;
+    height: 100%;
+    .clock {
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.5s ease-in-out;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      flex-grow: 0;
+      transition: all 0.5s ease-in-out;
+    }
+    &:hover .clock {
+      transform: scale(1.5);
+      filter: brightness(1.4);
+    }
+  }
+
+  .news-text {
+    width: 30%;
+    .img-wrapper {
+      width: 100%;
+    }
+  }
+
+  .img-wrapper {
+    width: 30%;
+  }
+
+  .news-text {
+    text-align: center;
+    h2 {
+      position: relative;
+      top: -8rem;
+    }
+
+    .highlight {
+      position: relative;
+      top: -7rem;
+    }
+
+    a {
+      position: relative;
+      top: -5rem;
+    }
+  }
+}
 // ---------------------!footer
 
 // ?animations
