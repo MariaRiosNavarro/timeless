@@ -87,6 +87,7 @@ p {
 // ---------------------!header
 
 .paralax {
+  z-index: 99;
   position: relative;
   background: url("../img/FJ_home_slider2.jpg") no-repeat center;
   background-attachment: fixed;
@@ -107,14 +108,15 @@ p {
   }
 }
 
-.sticky-position {
-  position: sticky;
-  top: 0;
-  z-index: 99;
+// ---------------------!main
+
+.fixed-position {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 50;
   padding-left: 2%;
 }
-
-// ---------------------!main
 
 // ---------------------#story
 

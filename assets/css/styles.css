@@ -82,6 +82,7 @@ p {
 }
 
 .paralax {
+  z-index: 99;
   position: relative;
   background: url("../img/FJ_home_slider2.jpg") no-repeat center;
   background-attachment: fixed;
@@ -104,10 +105,11 @@ p {
   width: 60vw;
 }
 
-.sticky-position {
-  position: sticky;
-  top: 0;
-  z-index: 99;
+.fixed-position {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 50;
   padding-left: 2%;
 }
 
