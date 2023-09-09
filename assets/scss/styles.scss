@@ -217,12 +217,13 @@ p {
 // ---------------------#partnership
 
 .partnership {
-  height: 50vh;
-  min-height: 500px;
+  height: 70vh;
+  min-height: 600px;
   background-color: $lb;
-  margin-bottom: 10vh;
+  padding-bottom: 10vh;
 
   h2 {
+    padding-top: 3rem;
     padding-bottom: 1.5rem;
   }
 
@@ -293,14 +294,10 @@ p {
     p {
       width: 33rem;
       margin-left: 15vh;
-      &:not(:last-of-type) {
-        padding-bottom: 2rem;
-      }
+      padding-bottom: 2rem;
     }
     .arrow-wrapper {
-      width: 30rem;
-      padding-top: 2rem;
-      border: 3px solid yellow;
+      width: 35rem;
       &:hover {
         width: 25rem;
         height: auto;
@@ -308,46 +305,6 @@ p {
     }
   }
 }
-
-.scale-img:hover .bck-img {
-  transform: scale(1.2);
-}
-
-// .showroom .arrow-wrapper:hover + .bck-img {
-//   transform: scale(1.2);
-// }
-
-// @include f-row;
-// article {
-//   &:first-of-type {
-//     width: 84%;
-//     border: 3px solid red;
-//     img {
-//       object-fit: cover;
-//       width: 100%;
-//     }
-//   }
-//   &:last-of-type {
-//     border: 3px solid green;
-//     width: 15%;
-//     h2 {
-//       @include text(5rem, 100);
-//       letter-spacing: 50px;
-//       text-transform: uppercase;
-//       position: relative;
-//       top: -19rem;
-//       left: -29rem;
-//     }
-//     p {
-//       font-family: Helvetica, Arial, sans-serif;
-//       @include text(1.6rem, 300);
-//       letter-spacing: 5px;
-//     }
-//     a {
-//       padding-top: 3rem;
-//     }
-//   }
-// }
 
 // ---------------------#news
 // ---------------------!footer

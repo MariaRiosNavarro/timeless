@@ -209,12 +209,13 @@ p {
 }
 
 .partnership {
-  height: 50vh;
-  min-height: 500px;
+  height: 70vh;
+  min-height: 600px;
   background-color: #1a1a1a;
-  margin-bottom: 10vh;
+  padding-bottom: 10vh;
 }
 .partnership h2 {
+  padding-top: 3rem;
   padding-bottom: 1.5rem;
 }
 .partnership p {
@@ -278,22 +279,14 @@ p {
 .showroom .text-container p {
   width: 33rem;
   margin-left: 15vh;
-}
-.showroom .text-container p:not(:last-of-type) {
   padding-bottom: 2rem;
 }
 .showroom .text-container .arrow-wrapper {
-  width: 30rem;
-  padding-top: 2rem;
-  border: 3px solid yellow;
+  width: 35rem;
 }
 .showroom .text-container .arrow-wrapper:hover {
   width: 25rem;
   height: auto;
-}
-
-.scale-img:hover .bck-img {
-  transform: scale(1.2);
 }
 
 @keyframes move {
