@@ -326,7 +326,6 @@ p {
     .clock {
       width: 100%;
       object-fit: cover;
-      transition: all 0.5s ease-in-out;
       overflow: hidden;
       margin: 0;
       padding: 0;
@@ -356,7 +355,10 @@ p {
       position: relative;
       top: -8rem;
     }
-
+    .line {
+      width: 30vw;
+      z-index: 10;
+    }
     .highlight {
       position: relative;
       top: -7rem;
@@ -369,6 +371,66 @@ p {
   }
 }
 // ---------------------!footer
+
+footer {
+  padding: 5rem;
+  background-color: $w;
+  .links-container {
+    @include f-row;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      text-align: center;
+      @include text(3rem, 100);
+      color: $lb;
+      font-family: $i;
+      letter-spacing: 80px;
+      transition: all 0.7s ease-in-out;
+      &:hover {
+        @include text(3rem, 300);
+      }
+    }
+
+    nav,
+    .sz-media {
+      @include f-row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav {
+      a {
+        @include text(1.6rem, 300);
+        color: #676767;
+        font-family: Helvetica;
+        font-weight: 300;
+        padding-right: 2rem;
+        &:hover {
+          text-decoration: underline $lb;
+        }
+      }
+    }
+
+    .sz-media {
+      align-items: baseline;
+      a {
+        position: relative;
+        img {
+          margin: 1rem;
+          padding-bottom: 0.1rem;
+          height: auto;
+          width: 1.5rem;
+          border-bottom: 1px solid transparent;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            padding-bottom: 0.1rem;
+            border-bottom: 1px solid $lb;
+          }
+        }
+      }
+    }
+  }
+}
 
 // ?animations
 

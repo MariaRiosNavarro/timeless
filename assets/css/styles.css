@@ -309,7 +309,6 @@ p {
 .news .img-wrapper .clock {
   width: 100%;
   object-fit: cover;
-  transition: all 0.5s ease-in-out;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -336,6 +335,10 @@ p {
   position: relative;
   top: -8rem;
 }
+.news .news-text .line {
+  width: 30vw;
+  z-index: 10;
+}
 .news .news-text .highlight {
   position: relative;
   top: -7rem;
@@ -343,6 +346,66 @@ p {
 .news .news-text a {
   position: relative;
   top: -5rem;
+}
+
+footer {
+  padding: 5rem;
+  background-color: #efeaea;
+}
+footer .links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .links-container h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 100;
+  color: #1a1a1a;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  letter-spacing: 80px;
+  transition: all 0.7s ease-in-out;
+}
+footer .links-container h2:hover {
+  font-size: 3rem;
+  font-weight: 300;
+}
+footer .links-container nav,
+footer .links-container .sz-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .links-container nav a {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #676767;
+  font-family: Helvetica;
+  font-weight: 300;
+  padding-right: 2rem;
+}
+footer .links-container nav a:hover {
+  text-decoration: underline #1a1a1a;
+}
+footer .links-container .sz-media {
+  align-items: baseline;
+}
+footer .links-container .sz-media a {
+  position: relative;
+}
+footer .links-container .sz-media a img {
+  margin: 1rem;
+  padding-bottom: 0.1rem;
+  height: auto;
+  width: 1.5rem;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+footer .links-container .sz-media a img:hover {
+  padding-bottom: 0.1rem;
+  border-bottom: 1px solid #1a1a1a;
 }
 
 @keyframes move {
