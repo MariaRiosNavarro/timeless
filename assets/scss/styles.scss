@@ -29,11 +29,16 @@ img {
   background-color: $b;
   color: $w;
   width: 100vw;
+  z-index: 99;
+  padding: 0 auto;
+  // overflow: hidden;
 }
 
 .width-wrapper {
   max-width: 1440px;
   margin: 0 auto;
+  background-color: $b;
+  // overflow: hidden;
 }
 
 html {
@@ -87,6 +92,7 @@ p {
 // ---------------------!header
 
 .paralax {
+  overflow: hidden;
   z-index: 99;
   position: relative;
   background: url("../img/FJ_home_slider2.jpg") no-repeat center;
@@ -94,33 +100,43 @@ p {
   background-size: cover;
   width: 100%;
   height: 100vh;
-  padding-top: 4rem;
-  @include f-row;
-  gap: 2rem;
+  @include f-column;
+  justify-content: center;
+  align-items: center;
   h1 {
     text-align: center;
     @include text(6rem, 100);
     color: #fff;
     font-family: $i;
     letter-spacing: 108px;
-    margin-left: 2%;
-    width: 60vw;
+    transition: all 0.7s ease-in-out;
+    &:hover {
+      @include text(6rem, 300);
+    }
   }
 }
 
 // ---------------------!main
 
-.fixed-position {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 50;
-  padding-left: 2%;
+main {
+  position: relative;
+  background-color: $lb;
+  .fixed-position {
+    position: sticky;
+    top: 1rem;
+    left: 1rem;
+    z-index: 50;
+    padding-left: 2%;
+  }
+  section {
+    height: 100vh;
+  }
 }
 
 // ---------------------#story
 
 .story {
+  height: 90vh;
   background-color: $lb;
   @include f-column;
   align-items: center;
@@ -156,6 +172,9 @@ p {
 // ---------------------#curated
 
 .curated {
+  @include f-column;
+  align-items: center;
+  justify-content: center;
   padding-bottom: 23rem;
   background-color: $b;
   h2 {
@@ -219,7 +238,11 @@ p {
 // ---------------------#partnership
 
 .partnership {
-  height: 70vh;
+  @include f-column;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  height: 100vh;
   min-height: 600px;
   background-color: $lb;
   padding-bottom: 10vh;
@@ -272,13 +295,16 @@ p {
 
 // ---------------------#showroom
 .showroom {
+  height: 100vh;
   background-color: $b;
   position: relative;
+  @include f-column;
+  align-items: center;
+  justify-content: center;
   .bck-img {
-    margin: 10rem;
     display: block;
     width: 80%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
     transition: all 0.5s ease-in-out;
   }
@@ -316,6 +342,15 @@ p {
 .news {
   padding: 10rem;
   background-color: $lb;
+  @include f-column;
+  align-items: center;
+  justify-content: space-around;
+  h2 {
+    @include text(3.3rem, 100);
+    font-family: $i;
+    letter-spacing: 10px;
+  }
+
   .clock-gallery {
     @include f-row;
     justify-content: space-between;
@@ -357,24 +392,20 @@ p {
       position: relative;
       top: -8rem;
     }
-    .line {
-      width: 30vw;
-      z-index: 10;
-    }
     .highlight {
       position: relative;
-      top: -7rem;
-    }
-
-    a {
-      position: relative;
       top: -5rem;
+      a {
+        margin-top: 2rem;
+      }
     }
   }
 }
+
 // ---------------------!footer
 
 footer {
+  overflow: hidden;
   padding: 5rem;
   background-color: $w;
   .links-container {
