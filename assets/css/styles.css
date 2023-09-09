@@ -282,11 +282,14 @@ p {
   padding-bottom: 2rem;
 }
 .showroom .text-container .arrow-wrapper {
-  width: 35rem;
+  width: 30rem;
 }
 .showroom .text-container .arrow-wrapper:hover {
   width: 25rem;
   height: auto;
+}
+.showroom .text-container .arrow-wrapper p {
+  padding-bottom: 0;
 }
 
 @keyframes move {

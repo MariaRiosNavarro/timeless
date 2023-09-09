@@ -297,10 +297,13 @@ p {
       padding-bottom: 2rem;
     }
     .arrow-wrapper {
-      width: 35rem;
+      width: 30rem;
       &:hover {
         width: 25rem;
         height: auto;
+      }
+      p {
+        padding-bottom: 0;
       }
     }
   }
