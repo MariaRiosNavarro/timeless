@@ -380,7 +380,9 @@ main {
 
   .img-wrapper {
     width: 30%;
-    aspect-ratio: 1;
+    // aspect-ratio: 1;
+    height: 200px;
+    overflow: hidden;
   }
 
   .news-text {
