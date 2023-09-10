@@ -24,6 +24,8 @@
 @media screen and (min-width: 767px) and (max-width: 1440px) {
   .paralax {
     background-size: auto 100%;
+    background: url("../img/FJ_home_slider2.jpg") no-repeat center;
+    background-attachment: scroll;
     h1 {
       padding-left: 5rem;
       font-size: clamp(3rem, 7vw, 6rem);
