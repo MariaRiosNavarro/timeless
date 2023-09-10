@@ -109,7 +109,63 @@
 
   // !header
 
+  // !story
+
+  .story-text {
+    width: 80vw;
+  }
+  .story {
+    justify-content: space-between;
+    h3 {
+      padding-top: 5rem;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      padding-bottom: 2rem;
+    }
+
+    .line {
+      display: none;
+    }
+    .story-img {
+      top: 0;
+    }
+    .arrow-wrapper {
+      top: -3rem;
+    }
+  }
+
   // !curated
+
+  .curated {
+    padding-bottom: 10rem;
+  }
+
+  .curated-text {
+    width: 80vw;
+  }
+
+  .gallery-hover {
+    @include f-column;
+    .img-item {
+      width: 50vw;
+      height: 200px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .hover-container {
+        h3 {
+          font-size: 2.5rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
 
   // !partnership
 

@@ -558,6 +558,53 @@ footer .links-container .sz-media a img:hover {
     padding-left: 0;
     margin-left: 0;
   }
+  .story-text {
+    width: 80vw;
+  }
+  .story {
+    justify-content: space-between;
+  }
+  .story h3 {
+    padding-top: 5rem;
+    padding-bottom: 0;
+  }
+  .story h2 {
+    padding-bottom: 2rem;
+  }
+  .story .line {
+    display: none;
+  }
+  .story .story-img {
+    top: 0;
+  }
+  .story .arrow-wrapper {
+    top: -3rem;
+  }
+  .curated {
+    padding-bottom: 10rem;
+  }
+  .curated-text {
+    width: 80vw;
+  }
+  .gallery-hover {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-hover .img-item {
+    width: 50vw;
+    height: 200px;
+  }
+  .gallery-hover .img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .gallery-hover .img-item .hover-container h3 {
+    font-size: 2.5rem;
+  }
+  .gallery-hover .img-item .hover-container p {
+    font-size: 1.5rem;
+  }
   .partnership {
     height: 70vh;
   }
