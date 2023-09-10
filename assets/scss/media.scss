@@ -1,6 +1,21 @@
 @import "./variables.scss";
 @import "./mixin.scss";
 
+@media screen and (min-width: 1440px) {
+  main {
+    position: relative;
+    background-color: $b;
+    width: 1440px;
+  }
+  .fixed-position {
+    position: sticky;
+    top: 1rem;
+    left: 1rem;
+    z-index: 50;
+    padding-left: 2%;
+  }
+}
+
 // normal desktop to mobile
 // @media screen and (min-width: 767px) and (max-width: 1440px) {}
 

@@ -117,7 +117,7 @@ main {
   background-color: #1a1a1a;
 }
 
-.fixed-position {
+.logo {
   position: fixed;
   top: 1rem;
   left: 1rem;
@@ -463,6 +463,20 @@ footer .links-container .sz-media a img:hover {
   }
   to {
     margin-left: -100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main {
+    position: relative;
+    background-color: #121212;
+    width: 1440px;
+  }
+  .fixed-position {
+    position: sticky;
+    top: 1rem;
+    left: 1rem;
+    z-index: 50;
+    padding-left: 2%;
   }
 }
 
