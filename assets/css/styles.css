@@ -665,5 +665,46 @@ footer .links-container .sz-media a img:hover {
     letter-spacing: 1rem;
   }
 }
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+  main {
+    width: 100vw;
+    overflow: hidden;
+  }
+  .paralax {
+    width: 100vw;
+    height: 85vh;
+  }
+  .paralax h1 {
+    padding-left: 2rem;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+  .showroom {
+    height: 70vh;
+  }
+  .showroom .text-container {
+    left: 1rem;
+    text-align: center;
+  }
+  .showroom .text-container h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: 1rem;
+    padding-left: 3rem;
+  }
+  .showroom .text-container p {
+    margin-left: 2vh;
+    padding-bottom: 2rem;
+    width: 23rem;
+  }
+  .showroom .text-container .arrow-wrapper {
+    text-align: center;
+    width: 22rem;
+    padding-left: 1rem;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

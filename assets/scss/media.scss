@@ -244,3 +244,51 @@
     }
   }
 }
+// small devices
+
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+  main {
+    width: 100vw;
+    overflow: hidden;
+  }
+  // header
+  .paralax {
+    width: 100vw;
+    height: 85vh;
+    h1 {
+      // transform: rotate(90deg);
+      padding-left: 2rem;
+      font-size: 2rem;
+      letter-spacing: 1rem;
+    }
+  }
+
+  // showroom
+
+  .showroom {
+    height: 70vh;
+    .text-container {
+      left: 1rem;
+      text-align: center;
+      h2 {
+        font-size: clamp(2rem, 5vw, 3rem);
+        letter-spacing: 1rem;
+        padding-left: 3rem;
+      }
+      p {
+        margin-left: 2vh;
+        padding-bottom: 2rem;
+        width: 23rem;
+      }
+      .arrow-wrapper {
+        text-align: center;
+        width: 22rem;
+        padding-left: 1rem;
+      }
+    }
+  }
+}
