@@ -20,9 +20,9 @@
   }
   .logo {
     position: fixed;
-    top: 5rem;
+    top: 3rem;
     left: 50%;
-    transform: translateX(135%);
+    transform: translateX(-45vw);
     margin-right: 25rem;
     width: 17rem;
     padding-left: 0;
