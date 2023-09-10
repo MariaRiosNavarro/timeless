@@ -49,6 +49,11 @@ h2 {
   font-weight: 100;
   letter-spacing: 10px;
   text-transform: uppercase;
+  transition: all 0.7s ease-in-out;
+}
+h2:hover {
+  font-size: 3.3rem;
+  font-weight: 300;
 }
 
 p {
@@ -303,6 +308,11 @@ main {
   font-weight: 100;
   letter-spacing: 50px;
   text-transform: uppercase;
+  transition: all 0.7s ease-in-out;
+}
+.showroom .text-container h2:hover {
+  font-size: 5rem;
+  font-weight: 300;
 }
 .showroom .text-container p {
   width: 33rem;
@@ -334,6 +344,10 @@ main {
   font-family: Inter, Arial, Helvetica, sans-serif;
   letter-spacing: 10px;
   padding-bottom: 5rem;
+}
+.news h2:hover {
+  font-size: 3.3rem;
+  font-weight: 300;
 }
 .news .clock-gallery {
   display: flex;

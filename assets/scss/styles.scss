@@ -55,6 +55,10 @@ h2 {
   @include text(3.3rem, 100);
   letter-spacing: 10px;
   text-transform: uppercase;
+  transition: all 0.7s ease-in-out;
+  &:hover {
+    @include text(3.3rem, 300);
+  }
 }
 
 p {
@@ -314,6 +318,10 @@ main {
       @include text(5rem, 100);
       letter-spacing: 50px;
       text-transform: uppercase;
+      transition: all 0.7s ease-in-out;
+      &:hover {
+        @include text(5rem, 300);
+      }
     }
     p {
       width: 33rem;
@@ -346,6 +354,9 @@ main {
     font-family: $i;
     letter-spacing: 10px;
     padding-bottom: 5rem;
+    &:hover {
+      @include text(3.3rem, 300);
+    }
   }
 
   .clock-gallery {

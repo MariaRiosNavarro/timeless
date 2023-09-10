@@ -1,13 +1,3 @@
-// @mixin dark {
-//     background-color: rgb(29, 27, 27);
-//     color: #efeaea;
-//   }
-
-//   @mixin light {
-//     background-color: #efeaea;
-//     color: rgb(29, 27, 27);
-//   }
-
 @mixin f-column {
   display: flex;
   flex-direction: column;
