@@ -54,5 +54,91 @@
     letter-spacing: 2rem;
   }
 }
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: 1rem;
+  }
+  main {
+    width: 100vw;
+  }
+  .paralax {
+    width: 100vw;
+    height: 85vh;
+  }
+  .paralax h1 {
+    padding-left: 2rem;
+    font-size: clamp(2rem, 7vw, 3rem);
+    letter-spacing: 3rem;
+  }
+  .logo {
+    position: fixed;
+    transform: rotate(90deg);
+    top: 5rem;
+    left: 85vw;
+    width: 8rem;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .partnership {
+    height: 70vh;
+  }
+  .partnership .partnership-text {
+    width: 80vw;
+    padding-top: 2rem;
+  }
+  .banner:nth-of-type(3) h3 {
+    animation: moveback 9s infinite linear;
+  }
+  .banner h3 {
+    animation: move 9s infinite linear;
+  }
+  .showroom {
+    height: 70vh;
+  }
+  .showroom .text-container {
+    left: 7rem;
+  }
+  .showroom .text-container h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: 2rem;
+  }
+  .showroom .text-container p {
+    margin-left: 2vh;
+    padding-bottom: 2rem;
+    width: 20rem;
+  }
+  .news {
+    padding-bottom: 20rem;
+  }
+  .news h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: 1rem;
+  }
+  .news .clock-gallery {
+    align-items: flex-start;
+  }
+  .news .news-text h2 {
+    margin: 0 auto;
+    width: 85vw;
+    top: 5rem;
+    right: 30vw;
+  }
+  .news .news-text .highlight {
+    width: 85vw;
+    margin: 0 auto;
+    top: 7rem;
+    right: 30vw;
+  }
+  footer .links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer .links-container h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: 1rem;
+  }
+}
 
 /*# sourceMappingURL=media.css.map */
