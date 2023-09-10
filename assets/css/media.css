@@ -12,5 +12,12 @@
     padding-left: 2%;
   }
 }
+@media screen and (min-width: 767px) and (max-width: 1440px) {
+  h1 {
+    font-size: clamp(2rem, 2vh, 4rem);
+    background-color: red;
+    letter-spacing: 7rem;
+  }
+}
 
 /*# sourceMappingURL=media.css.map */

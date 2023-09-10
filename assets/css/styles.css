@@ -52,7 +52,6 @@ h2 {
   transition: all 0.7s ease-in-out;
 }
 h2:hover {
-  font-size: 3.3rem;
   font-weight: 300;
 }
 
@@ -113,7 +112,6 @@ p {
   transition: all 0.7s ease-in-out;
 }
 .paralax h1:hover {
-  font-size: 6rem;
   font-weight: 300;
 }
 
@@ -311,7 +309,6 @@ main {
   transition: all 0.7s ease-in-out;
 }
 .showroom .text-container h2:hover {
-  font-size: 5rem;
   font-weight: 300;
 }
 .showroom .text-container p {
@@ -344,9 +341,9 @@ main {
   font-family: Inter, Arial, Helvetica, sans-serif;
   letter-spacing: 10px;
   padding-bottom: 5rem;
+  transition: all 0.7s ease-in-out;
 }
 .news h2:hover {
-  font-size: 3.3rem;
   font-weight: 300;
 }
 .news .clock-gallery {
@@ -423,7 +420,6 @@ footer .links-container h2 {
   transition: all 0.7s ease-in-out;
 }
 footer .links-container h2:hover {
-  font-size: 3rem;
   font-weight: 300;
 }
 footer .links-container nav,
@@ -491,6 +487,13 @@ footer .links-container .sz-media a img:hover {
     left: 50%;
     transform: translateX(-720px);
     padding-left: 2%;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1440px) {
+  h1 {
+    font-size: clamp(2rem, 2vh, 4rem);
+    background-color: red;
+    letter-spacing: 7rem;
   }
 }
 

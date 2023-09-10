@@ -12,3 +12,7 @@
   font-size: $fz;
   font-weight: $fw;
 }
+
+@mixin weight {
+  font-weight: 300;
+}
