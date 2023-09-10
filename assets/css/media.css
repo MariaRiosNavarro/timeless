@@ -14,7 +14,7 @@
 }
 @media screen and (min-width: 767px) and (max-width: 1440px) {
   .paralax {
-    background-size: 100% auto;
+    background-size: auto 100%;
   }
   .paralax h1 {
     padding-left: 5rem;
