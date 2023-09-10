@@ -29,6 +29,8 @@
     background-attachment: scroll;
     background-size: auto 100%;
     background-position: bottom;
+    // for tablet need: background-attachment: scroll, background-size: auto 100%, background-position: bottom;
+
     h1 {
       padding-left: 5rem;
       font-size: clamp(3rem, 7vw, 6rem);
