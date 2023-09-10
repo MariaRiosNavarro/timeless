@@ -12,5 +12,5 @@
 # Mobile Version
 
 ![](/assets/img/mobile1.png)
-![](/assets/img/mobile3.png)
 ![](/assets/img/mobile2.png)
+![](/assets/img/mobile3.png)
