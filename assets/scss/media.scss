@@ -202,6 +202,11 @@
         padding-bottom: 2rem;
         width: 20rem;
       }
+      .arrow-wrapper {
+        text-align: center;
+        width: 22rem;
+        padding-left: 1rem;
+      }
     }
   }
 
@@ -246,7 +251,7 @@
 }
 // small devices
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 280px) {
   h2 {
     font-size: 2rem;
     letter-spacing: 1rem;
