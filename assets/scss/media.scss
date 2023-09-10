@@ -1,6 +1,8 @@
 @import "./variables.scss";
 @import "./mixin.scss";
 
+// ----------------#BIG SCREENS
+
 @media screen and (min-width: 1440px) {
   main {
     position: relative;
@@ -17,8 +19,10 @@
   }
 }
 
-// normal desktop to mobile
-// @media screen and (min-width: 767px) and (max-width: 1440px) {}
+// ----------------#normal desktop to mobile (tablet inclusive)
 
-// mobile
+@media screen and (min-width: 767px) and (max-width: 1440px) {
+}
+
+// ----------------#mobile
 // @media screen and (max-width: 767px) {}
