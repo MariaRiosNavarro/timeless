@@ -27,6 +27,17 @@
     font-size: clamp(3rem, 7vw, 6rem);
     letter-spacing: 7rem;
   }
+  .logo {
+    position: fixed;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(135%);
+    margin-right: 25rem;
+    width: 17rem;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
   .news {
     padding-bottom: 20rem;
     .clock-gallery {
