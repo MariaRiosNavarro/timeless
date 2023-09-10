@@ -28,10 +28,13 @@
     background: url("../img/FJ_home_slider2.jpg") no-repeat center;
     background-attachment: scroll;
     background-size: auto 100%;
+    background-position: bottom;
     h1 {
       padding-left: 5rem;
+      color: red;
       font-size: clamp(3rem, 7vw, 6rem);
       letter-spacing: 7rem;
+      background-color: aqua;
     }
   }
   .logo {
