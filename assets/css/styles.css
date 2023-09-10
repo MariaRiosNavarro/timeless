@@ -544,6 +544,7 @@ footer .links-container .sz-media a img:hover {
     width: 100vw;
     height: 85vh;
     background-attachment: scroll;
+    background-size: contain;
   }
   .paralax h1 {
     padding-left: 2rem;
