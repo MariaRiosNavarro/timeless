@@ -491,7 +491,7 @@ footer .links-container .sz-media a img:hover {
 }
 @media screen and (min-width: 767px) and (max-width: 1440px) {
   h1 {
-    font-size: clamp(2rem, 2vh, 4rem);
+    font-size: clamp(2rem, 2vh, 3rem);
     background-color: red;
     letter-spacing: 7rem;
   }
