@@ -23,10 +23,8 @@
   }
   .paralax h1 {
     padding-left: 5rem;
-    color: red;
     font-size: clamp(3rem, 7vw, 6rem);
     letter-spacing: 7rem;
-    background-color: aqua;
   }
   .logo {
     position: fixed;
@@ -48,12 +46,12 @@
     margin: 0 auto;
     width: 80vw;
     top: 5rem;
-    right: 23rem;
+    right: 110%;
   }
   .news .news-text .highlight {
     width: 80vw;
     top: 7rem;
-    right: 23rem;
+    right: 110%;
     margin: 0 auto;
   }
   .showroom {
