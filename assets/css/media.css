@@ -4,11 +4,11 @@
     background-color: #121212;
     width: 1440px;
   }
-  .fixed-position {
-    position: sticky;
+  .logo {
+    position: fixed;
     top: 1rem;
-    left: 1rem;
-    z-index: 50;
+    left: 50%;
+    transform: translateX(-720px);
     padding-left: 2%;
   }
 }
