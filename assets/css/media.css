@@ -65,8 +65,9 @@
   .paralax {
     width: 100vw;
     height: 85vh;
+    background: url("../img/FJ_home_slider2.jpg") no-repeat center;
     background-attachment: scroll;
-    background-size: contain;
+    background-size: auto 100%;
   }
   .paralax h1 {
     padding-left: 2rem;

@@ -90,8 +90,10 @@
   .paralax {
     width: 100vw;
     height: 85vh;
+    background: url("../img/FJ_home_slider2.jpg") no-repeat center;
     background-attachment: scroll;
-    background-size: contain;
+    background-size: auto 100%;
+
     h1 {
       // transform: rotate(90deg);
       padding-left: 2rem;
